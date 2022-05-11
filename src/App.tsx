@@ -16,6 +16,7 @@ import LivingPortrait from "./LivingPortrait.tsx";
 import monroe from "./images/monroe.gif";
 import dali from "./images/dali.gif";
 import mona from "./images/mona.gif";
+import Strategies from "./Strategies.tsx";
 
 const StyledContainer = styled.div`
   display: flex;
@@ -72,6 +73,7 @@ function App() {
           {media === Media.Mona && <LivingPortrait src={mona} />}
           {media === Media.Bourdain && <Bourdain />}
           {media === Media.Roundtable && <VideoComponent src={roundtable} />}
+          {media === Media.Strategies && <Strategies />}
         </StyledMediaContainer>
       </StyledContainer>
     </>

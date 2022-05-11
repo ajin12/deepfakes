@@ -169,8 +169,11 @@ const TextContent: React.FC<Props> = ({ setMedia }) => {
         A natural question that follows is how we can spot deepfakes and become
         more conscious, critical consumers of media. Unfortunately, there isn't
         a rulebook to follow that'll allow someone to detect deepfakes with
-        perfect accuracy, but here are some actionable strategies that could
-        help in determining whether one can believe what they see.
+        perfect accuracy, but here are some{" "}
+        <MediaEmphasis onClick={() => setMedia(Media.Strategies)}>
+          actionable strategies that could help in determining whether one can
+          believe what they see.
+        </MediaEmphasis>
       </p>
       <ul>
         <li>
