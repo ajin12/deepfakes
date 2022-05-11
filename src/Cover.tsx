@@ -1,6 +1,8 @@
 import styled from "@emotion/styled";
 import React from "react";
+import { Media } from "./App.tsx";
 import cover from "./images/cover.png";
+import white from "./images/white.jpeg";
 
 const StyledCover = styled.div`
   display: flex;
@@ -17,13 +19,18 @@ const StyledTitle = styled.h1`
   padding: 60px;
 `;
 
-const Cover: React.FC = () => {
+interface Props {
+  media: Media;
+}
+
+const Cover: React.FC<Props> = ({ media }) => {
   return (
     <StyledCover>
       <StyledTitle>
         When Seeing is No Longer Believing: The Rise of the Deepfake
       </StyledTitle>
-      <img src={cover} width="50%" />
+
+      <img src={media === undefined ? cover : white} width="50%" />
     </StyledCover>
   );
 };

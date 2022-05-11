@@ -42,7 +42,7 @@ function App() {
 
   return (
     <>
-      <Cover />
+      <Cover media={media} />
       <StyledContainer>
         <StyledTextContainer>
           <TextContent setMedia={setMedia} />
