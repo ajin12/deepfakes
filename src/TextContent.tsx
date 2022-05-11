@@ -113,9 +113,11 @@ const TextContent: React.FC<Props> = ({ setMedia }) => {
         receiving several more calls requesting another payment. Eventually, it
         was found that criminals had used AI to generate a deepfake of the
         boss's voice. As Francesca Panetta, XR creative director at the MIT
-        Center for Advanced Virtuality, remarks, "It doesn't have to be a
-        politician to be a deepfake. It even might be your friend. It could be
-        you that's targeted."
+        Center for Advanced Virtuality, remarks,{" "}
+        <MediaEmphasis onClick={() => setMedia(Media.Quote)}>
+          "It doesn't have to be a politician to be a deepfake. It even might be
+          your friend. It could be you that's targeted."
+        </MediaEmphasis>
       </p>
       <Subtitle>Art</Subtitle>
       <p>

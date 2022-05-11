@@ -9,6 +9,7 @@ import Zuck from "./Zuck.tsx";
 import VideoComponent from "./VideoComponent.tsx";
 import pelosi from "./images/pelosi.mp4";
 import nixon from "./images/nixon.mp4";
+import Quote from "./Quote.tsx";
 
 const StyledContainer = styled.div`
   display: flex;
@@ -57,6 +58,7 @@ function App() {
           {media === Media.Pelosi && <VideoComponent src={pelosi} />}
           {media === Media.Zuck && <Zuck />}
           {media === Media.Nixon && <VideoComponent src={nixon} />}
+          {media === Media.Quote && <Quote />}
         </StyledMediaContainer>
       </StyledContainer>
     </>
