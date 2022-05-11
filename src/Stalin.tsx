@@ -6,12 +6,17 @@ import stalin2b from "./images/stalin2b.png";
 import stalin3a from "./images/stalin3a.png";
 import stalin3b from "./images/stalin3b.png";
 import Carousel from "react-bootstrap/Carousel";
+import styled from "@emotion/styled";
+
+const StyledImage = styled.img`
+  border-radius: 16px;
+`;
 
 const Stalin: React.FC = () => {
   return (
     <Carousel fade>
       <Carousel.Item>
-        <img className="d-block w-100" src={stalin1a} />
+        <StyledImage className="d-block w-100" src={stalin1a} />
         <Carousel.Caption style={{ fontFamily: "PT Serif, serif" }}>
           <p>
             Nikolai Yezhov, a secret police official who fell from Stalin's
@@ -21,7 +26,7 @@ const Stalin: React.FC = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100" src={stalin1b} />
+        <StyledImage className="d-block w-100" src={stalin1b} />
         <Carousel.Caption style={{ fontFamily: "PT Serif, serif" }}>
           <p>
             Nikolai Yezhov, a secret police official who fell from Stalin's
@@ -32,7 +37,7 @@ const Stalin: React.FC = () => {
       </Carousel.Item>
 
       <Carousel.Item>
-        <img className="d-block w-100" src={stalin2a} width="100%" />
+        <StyledImage className="d-block w-100" src={stalin2a} width="100%" />
 
         <Carousel.Caption style={{ fontFamily: "PT Serif, serif" }}>
           <p>
@@ -43,7 +48,7 @@ const Stalin: React.FC = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100" src={stalin2b} width="100%" />
+        <StyledImage className="d-block w-100" src={stalin2b} width="100%" />
 
         <Carousel.Caption style={{ fontFamily: "PT Serif, serif" }}>
           <p>
@@ -55,7 +60,7 @@ const Stalin: React.FC = () => {
       </Carousel.Item>
 
       <Carousel.Item>
-        <img className="d-block w-100" src={stalin3a} />
+        <StyledImage className="d-block w-100" src={stalin3a} />
 
         <Carousel.Caption style={{ fontFamily: "PT Serif, serif" }}>
           <p>
@@ -66,7 +71,7 @@ const Stalin: React.FC = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100" src={stalin3b} />
+        <StyledImage className="d-block w-100" src={stalin3b} />
 
         <Carousel.Caption style={{ fontFamily: "PT Serif, serif" }}>
           <p>

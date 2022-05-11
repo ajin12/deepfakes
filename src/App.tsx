@@ -5,6 +5,7 @@ import Stalin from "./Stalin.tsx";
 import TextContent from "./TextContent.tsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
+import Pelosi from "./Pelosi.tsx";
 
 const StyledContainer = styled.div`
   display: flex;
@@ -50,6 +51,7 @@ function App() {
 
         <StyledMediaContainer>
           {media === Media.Stalin && <Stalin />}
+          {media === Media.Pelosi && <Pelosi />}
         </StyledMediaContainer>
       </StyledContainer>
     </>

@@ -56,8 +56,11 @@ const TextContent: React.FC<Props> = ({ setMedia }) => {
       </p>
       <Subtitle>Political</Subtitle>
       <p>
-        In May 2019, a fake video of Nancy Pelosi slurring through a speech was
-        shared extensively on Facebook and YouTube. Originally posted by a
+        In May 2019, a fake video of{" "}
+        <MediaEmphasis onClick={() => setMedia(Media.Pelosi)}>
+          Nancy Pelosi slurring through a speech
+        </MediaEmphasis>{" "}
+        was shared extensively on Facebook and YouTube. Originally posted by a
         34-year-old sports blogger and "Trump superfan," the video was soon
         posted by Trump himself on Twitter, who captioned it, "PELOSI STAMMERS
         THROUGH NEWS CONFERENCE." By the time the video was shown to be fake, it
