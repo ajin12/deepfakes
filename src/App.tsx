@@ -11,6 +11,11 @@ import pelosi from "./images/pelosi.mp4";
 import roundtable from "./images/roundtable.mp4";
 import nixon from "./images/nixon.mp4";
 import Quote from "./Quote.tsx";
+import Bourdain from "./Bourdain.tsx";
+import LivingPortrait from "./LivingPortrait.tsx";
+import monroe from "./images/monroe.gif";
+import dali from "./images/dali.gif";
+import mona from "./images/mona.gif";
 
 const StyledContainer = styled.div`
   display: flex;
@@ -37,7 +42,9 @@ export const enum Media {
   Zuck,
   Nixon,
   Quote,
-  LivingPortraits,
+  Monroe,
+  Dali,
+  Mona,
   Bourdain,
   Roundtable,
   Strategies,
@@ -60,6 +67,10 @@ function App() {
           {media === Media.Zuck && <Zuck />}
           {media === Media.Nixon && <VideoComponent src={nixon} />}
           {media === Media.Quote && <Quote />}
+          {media === Media.Monroe && <LivingPortrait src={monroe} />}
+          {media === Media.Dali && <LivingPortrait src={dali} />}
+          {media === Media.Mona && <LivingPortrait src={mona} />}
+          {media === Media.Bourdain && <Bourdain />}
           {media === Media.Roundtable && <VideoComponent src={roundtable} />}
         </StyledMediaContainer>
       </StyledContainer>

@@ -124,13 +124,27 @@ const TextContent: React.FC<Props> = ({ setMedia }) => {
         Deepfakes have also been created for artistic purposes, whether it's
         Lucasfilm bringing back Peter Cushing's Grand Moff Tarkin and Carrie
         Fisher's Princess Leia in Rogue One: A Star Wars Story, or Samsung AI
-        researchers generating living portraits of Marilyn Monroe, Salvador
-        Dalí, and the Mona Lisa. A recent controversy surrounding the
-        documentary "Roadrunner" following Anthony Bourdain's life and career
-        came into the limelight when it was discovered that audio deepfakes of
-        Bourdain's voice were generated without disclosure to audiences or
-        explicit consent from those in Bourdain's close circles, raising
-        questions about what constitutes ethical use of synthetic media.
+        researchers generating living portraits of{" "}
+        <MediaEmphasis onClick={() => setMedia(Media.Monroe)}>
+          Marilyn Monroe
+        </MediaEmphasis>{" "}
+        ,{" "}
+        <MediaEmphasis onClick={() => setMedia(Media.Dali)}>
+          Salvador Dalí
+        </MediaEmphasis>
+        , and{" "}
+        <MediaEmphasis onClick={() => setMedia(Media.Mona)}>
+          the Mona Lisa
+        </MediaEmphasis>
+        . A recent controversy surrounding the documentary "Roadrunner"
+        following Anthony Bourdain's life and career came into the limelight
+        when it was discovered that{" "}
+        <MediaEmphasis onClick={() => setMedia(Media.Bourdain)}>
+          audio deepfakes of Bourdain's voice
+        </MediaEmphasis>{" "}
+        were generated without disclosure to audiences or explicit consent from
+        those in Bourdain's close circles, raising questions about what
+        constitutes ethical use of synthetic media.
       </p>
       <Subtitle>Amusement</Subtitle>
       <p>
