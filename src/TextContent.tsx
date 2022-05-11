@@ -71,15 +71,18 @@ const TextContent: React.FC<Props> = ({ setMedia }) => {
       </p>
       <p>
         In response to this incident, a team of artists shared on Instagram a
-        deepfake of Mark Zuckerberg boasting that he has "total control of
-        billions of people's stolen data, all their secrets, their lives, their
-        futures." They wanted to make a statement "to interrogate the power of
-        these new forms of computational propaganda" and test whether Facebook's
-        response to this deepfake would be consistent with their response to the
-        deepfake of Pelosi, considering that this particular video is harmful to
-        the company's reputation. A spokesperson stated, "We will treat this
-        content the same way we treat all misinformation on Instagram… If
-        third-party fact-checkers mark it as false, we will filter it."
+        deepfake of{" "}
+        <MediaEmphasis onClick={() => setMedia(Media.Zuck)}>
+          Mark Zuckerberg boasting that he has "total control of billions of
+          people's stolen data, all their secrets, their lives, their futures."
+        </MediaEmphasis>{" "}
+        They wanted to make a statement "to interrogate the power of these new
+        forms of computational propaganda" and test whether Facebook's response
+        to this deepfake would be consistent with their response to the deepfake
+        of Pelosi, considering that this particular video is harmful to the
+        company's reputation. A spokesperson stated, "We will treat this content
+        the same way we treat all misinformation on Instagram… If third-party
+        fact-checkers mark it as false, we will filter it."
       </p>
       <Subtitle>Educational</Subtitle>
       <p>

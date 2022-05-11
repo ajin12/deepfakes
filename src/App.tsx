@@ -6,6 +6,7 @@ import TextContent from "./TextContent.tsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
 import Pelosi from "./Pelosi.tsx";
+import Zuck from "./Zuck.tsx";
 
 const StyledContainer = styled.div`
   display: flex;
@@ -52,6 +53,7 @@ function App() {
         <StyledMediaContainer>
           {media === Media.Stalin && <Stalin />}
           {media === Media.Pelosi && <Pelosi />}
+          {media === Media.Zuck && <Zuck />}
         </StyledMediaContainer>
       </StyledContainer>
     </>
