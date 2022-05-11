@@ -100,12 +100,7 @@ const Zuck: React.FC = () => {
                 version="1.1"
                 xmlns="https://www.w3.org/2000/svg"
               >
-                <g
-                  stroke="none"
-                  stroke-width="1"
-                  fill="none"
-                  fill-rule="evenodd"
-                >
+                <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                   <g
                     transform="translate(-511.000000, -20.000000)"
                     fill="#000000"

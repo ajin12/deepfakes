@@ -13,7 +13,7 @@ const Bourdain: React.FC = () => {
         width="100%"
         height="100%"
         scrolling="no"
-        frameborder="no"
+        frameBorder="no"
         allow="autoplay"
         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1109925649%3Fsecret_token%3Ds-YKVhlkD8hkD&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"
       ></iframe>
