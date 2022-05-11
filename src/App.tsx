@@ -8,6 +8,7 @@ import { useState } from "react";
 import Zuck from "./Zuck.tsx";
 import VideoComponent from "./VideoComponent.tsx";
 import pelosi from "./images/pelosi.mp4";
+import roundtable from "./images/roundtable.mp4";
 import nixon from "./images/nixon.mp4";
 import Quote from "./Quote.tsx";
 
@@ -59,6 +60,7 @@ function App() {
           {media === Media.Zuck && <Zuck />}
           {media === Media.Nixon && <VideoComponent src={nixon} />}
           {media === Media.Quote && <Quote />}
+          {media === Media.Roundtable && <VideoComponent src={roundtable} />}
         </StyledMediaContainer>
       </StyledContainer>
     </>

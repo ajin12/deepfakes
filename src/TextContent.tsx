@@ -135,12 +135,14 @@ const TextContent: React.FC<Props> = ({ setMedia }) => {
       <Subtitle>Amusement</Subtitle>
       <p>
         Finally, deepfakes are also created to make people laugh. A classic
-        example of synthetic content generated to serve as entertainment is this
-        celebrity deepfake roundtable created by Collider. In this humorous
-        15-minute conversation, an imagined conversation takes place between
-        deepfake likenesses of George Lucas, Robert Downey Jr., Tom Cruise, Ewan
-        McGregor, and Jeff Goldblum, and they discuss the streaming wars and the
-        future of cinema.
+        example of synthetic content generated to serve as entertainment is this{" "}
+        <MediaEmphasis onClick={() => setMedia(Media.Roundtable)}>
+          celebrity deepfake roundtable
+        </MediaEmphasis>{" "}
+        created by Collider. In this humorous 15-minute conversation, an
+        imagined conversation takes place between deepfake likenesses of George
+        Lucas, Robert Downey Jr., Tom Cruise, Ewan McGregor, and Jeff Goldblum,
+        and they discuss the streaming wars and the future of cinema.
       </p>
       <p>
         While the examples above are by no means comprehensive in covering the
