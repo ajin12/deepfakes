@@ -5,8 +5,10 @@ import Stalin from "./Stalin.tsx";
 import TextContent from "./TextContent.tsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
-import Pelosi from "./Pelosi.tsx";
 import Zuck from "./Zuck.tsx";
+import VideoComponent from "./VideoComponent.tsx";
+import pelosi from "./images/pelosi.mp4";
+import nixon from "./images/nixon.mp4";
 
 const StyledContainer = styled.div`
   display: flex;
@@ -52,8 +54,9 @@ function App() {
 
         <StyledMediaContainer>
           {media === Media.Stalin && <Stalin />}
-          {media === Media.Pelosi && <Pelosi />}
+          {media === Media.Pelosi && <VideoComponent src={pelosi} />}
           {media === Media.Zuck && <Zuck />}
+          {media === Media.Nixon && <VideoComponent src={nixon} />}
         </StyledMediaContainer>
       </StyledContainer>
     </>

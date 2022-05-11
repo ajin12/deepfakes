@@ -89,14 +89,17 @@ const TextContent: React.FC<Props> = ({ setMedia }) => {
         A team at the MIT Center for Advanced Virtuality created an art
         installation that used footage of President Nixon's resignation speech
         and the draft of an in-memoriam speech that would've been delivered if
-        the Apollo 11 mission had not succeeded to generate a deepfake of Nixon
-        giving the speech on air. As for the process of fabricating the video,
-        the team filmed an actor reading the contingency speech, the actor's
-        voice was synthesized to match President Nixon's, and Nixon's lip
-        motions and his head, facial, and hand movements were modified to sync
-        with what was being said. It was deliberately made with the purpose of
-        educating people of the power of deepfakes, how realistic they can be,
-        and their potential to convey false versions of history.
+        the Apollo 11 mission had not succeeded to generate a{" "}
+        <MediaEmphasis onClick={() => setMedia(Media.Nixon)}>
+          deepfake of Nixon giving the speech on air.
+        </MediaEmphasis>{" "}
+        As for the process of fabricating the video, the team filmed an actor
+        reading the contingency speech, the actor's voice was synthesized to
+        match President Nixon's, and Nixon's lip motions and his head, facial,
+        and hand movements were modified to sync with what was being said. It
+        was deliberately made with the purpose of educating people of the power
+        of deepfakes, how realistic they can be, and their potential to convey
+        false versions of history.
       </p>
       <Subtitle>Fraud</Subtitle>
       <p>
