@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import Stalin from "./Stalin.tsx";
 import TextContent from "./TextContent.tsx";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useState } from "react";
 
 const StyledContainer = styled.div`
   display: flex;
@@ -24,17 +25,31 @@ const StyledMediaContainer = styled.div`
   transform: translate(0%, -50%);
 `;
 
+export const enum Media {
+  Stalin,
+  Pelosi,
+  Zuck,
+  Nixon,
+  Quote,
+  LivingPortraits,
+  Bourdain,
+  Roundtable,
+  Strategies,
+}
+
 function App() {
+  const [media, setMedia] = useState<Media>();
+
   return (
     <>
       <Cover />
       <StyledContainer>
         <StyledTextContainer>
-          <TextContent />
+          <TextContent setMedia={setMedia} />
         </StyledTextContainer>
 
         <StyledMediaContainer>
-          <Stalin />
+          {media === Media.Stalin && <Stalin />}
         </StyledMediaContainer>
       </StyledContainer>
     </>

@@ -1,11 +1,25 @@
 import styled from "@emotion/styled";
 import React from "react";
+import { Media } from "./App.tsx";
 
 const Subtitle = styled.h3`
   font-family: "Source Code Pro", monospace;
 `;
 
-const TextContent: React.FC = () => {
+interface Props {
+  setMedia: (media: Media) => void;
+}
+
+const MediaEmphasis = styled.span`
+  background-color: rgba(171, 205, 239, 0.5);
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(171, 205, 239, 0.8);
+  }
+`;
+
+const TextContent: React.FC<Props> = ({ setMedia }) => {
   return (
     <>
       <p>
@@ -20,15 +34,18 @@ const TextContent: React.FC = () => {
       <p>
         The fabrication and alteration of content is not a 21st century novelty.
         Ancient Romans chipped off names and portraits from stone to erase
-        records of a person's existence, and Joseph Stalin didn't need Photoshop
-        or DNNs to doctor photos, purging his political enemies from them.
-        However, with the development of increasingly powerful AI technology and
-        lowered barriers to accessing them, now it may only take a matter of
-        minutes to churn out a highly convincing deepfake. The rapid
-        dissemination of information through media and news outlets, as well as
-        connectivity provided by social media platforms also makes it incredibly
-        easy for deepfakes to spread like wildfire, which, when consumed by
-        unknowing viewers, may bring unintended consequences.
+        records of a person's existence, and{" "}
+        <MediaEmphasis onClick={() => setMedia(Media.Stalin)}>
+          Joseph Stalin didn't need Photoshop or DNNs to doctor photos
+        </MediaEmphasis>
+        , purging his political enemies from them. However, with the development
+        of increasingly powerful AI technology and lowered barriers to accessing
+        them, now it may only take a matter of minutes to churn out a highly
+        convincing deepfake. The rapid dissemination of information through
+        media and news outlets, as well as connectivity provided by social media
+        platforms also makes it incredibly easy for deepfakes to spread like
+        wildfire, which, when consumed by unknowing viewers, may bring
+        unintended consequences.
       </p>
       —
       <p>
